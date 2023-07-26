@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./initial.component.scss']
 })
 export class InitialComponent {
-
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({behavior: 'smooth'});
+}
 }

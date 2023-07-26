@@ -1,5 +1,32 @@
 @use '@angular/material' as mat;
-$my-palette: mat.define-palette(mat.$indigo-palette);
+
+.top-bar {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  font-weight: 500;
+  padding-left: 60px;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-bar-buttons {
+  display: flex;
+  height: 59px;
+  padding: 0px 60px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  flex: 1 0 0;
+}
+
+.top-bar-button {
+  font-size: 1em;
+}
+
 
 .title {
   text-align: center;
@@ -35,27 +62,71 @@ $my-palette: mat.define-palette(mat.$indigo-palette);
 }
 
 
-.logo-container {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+.testimonial-container {
+  overflow: hidden; /* Hide content that goes beyond the container */
 }
 
-.logos {
-  white-space: nowrap;
+.testimonial-wrapper {
+  display: flex;
   animation: scroll 20s linear infinite;
 }
 
-.logos img {
-  max-height: 80px; /* Adjust the height of the logos as needed */
-  margin: 0 20px; /* Adjust the space between logos as needed */
+.testimonial {
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 5px;
 }
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(100vw);
   }
   100% {
-    transform: translateX(calc(-100% + 100vw));
+    transform: translateX(calc(-100% + 20px)); /* Adjust the value based on the testimonial container's width and margin */
   }
+}
+
+
+
+.small-title {
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-left: 12%;
+  padding-right: 12%;
+  text-align: center;
+}
+
+
+.two-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 97px;
+}
+
+.card {
+  display: flex;
+  width: 344px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  //background: #d4af37;
+  //color: white;
+}
+
+.card-bottom-p {
+  padding-top: 30px;
+}
+
+.card-title {
+  font-size: 1em;
+  font-weight: 600;
 }
