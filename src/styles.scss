@@ -12,8 +12,38 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$HestiaPage-primary: mat.define-palette(mat.$indigo-palette);
-$HestiaPage-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$dark-text: #000000;
+$dark-primary-text: rgba($dark-text, 0.87);
+$dark-accent-text: rgba($dark-primary-text, 0.54);
+$mat-primary: (
+  main: #d4af37,
+  lighter: #f2e7c3,
+  darker: #c39623,
+  200: #d4af37, // For slide toggle,
+  contrast : (
+    main: $dark-primary-text,
+    lighter: $dark-primary-text,
+    darker: $dark-primary-text,
+  )
+);
+$HestiaPage-primary: mat.define-palette($mat-primary, main, lighter, darker);
+
+$light-text: #ffffff;
+$light-primary-text: $light-text;
+$light-accent-text: rgba($light-primary-text, 0.7);
+$mat-accent: (
+  main: #6a428e,
+  lighter: #d2c6dd,
+  darker: #4d2b71,
+  200: #6a428e, // For slide toggle,
+  contrast : (
+    main: $light-primary-text,
+    lighter: $dark-primary-text,
+    darker: $light-primary-text,
+  )
+);
+$HestiaPage-accent: mat.define-palette($mat-accent, main, lighter, darker);
 
 // The warn palette is optional (defaults to red).
 $HestiaPage-warn: mat.define-palette(mat.$red-palette);
