@@ -23,7 +23,6 @@ $my-palette: mat.define-palette(mat.$indigo-palette);
 
 .cta {
   text-align: center;
-
   font-size: 1em;
 }
 
@@ -32,4 +31,31 @@ $my-palette: mat.define-palette(mat.$indigo-palette);
   justify-content: center;
   align-items: center;
   gap: 15px;
+  padding-right: 20px;
+}
+
+
+.logo-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logos {
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.logos img {
+  max-height: 80px; /* Adjust the height of the logos as needed */
+  margin: 0 20px; /* Adjust the space between logos as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 100vw));
+  }
 }
