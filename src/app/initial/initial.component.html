@@ -3,7 +3,7 @@
   <!--Buttons-->
   <div class="top-bar-buttons">
     <button mat-button (click)="scroll(features)" class="top-bar-button">Features</button>
-    <button mat-button class="top-bar-button">Pricing</button>
+    <button mat-button class="top-bar-button" (click)="scroll(features)">Pricing</button>
     <button mat-raised-button class="top-bar-button" color="primary" style="color: white ;">I'm interested!</button>
   </div>
 </div>
@@ -15,7 +15,7 @@
   <div>
     <button mat-raised-button class="cta" color="primary" (click)="scroll(features)" style="color: white ;">Features</button>
   </div>
-  <button mat-raised-button class="cta">Pricing</button>
+  <button mat-raised-button class="cta" (click)="scroll(pricing)">Pricing</button>
 </div>
 
 
@@ -49,7 +49,7 @@
     <!-- Add more testimonials as needed -->
   </div>
 </div>
-
+<mat-divider></mat-divider>
 
 <div #features>
 <h1 class="title">Features</h1>
@@ -68,10 +68,12 @@
   </mat-card>
   <mat-card class="card">
     <mat-card-header>
-      <mat-card-title class="card-title">Shiba Inu</mat-card-title>
+      <mat-card-title class="card-title">Point of Sale (POS) integration</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <p>This card indeterminates progress bar.</p>
+      <p>
+        Seamless integration between point of sale (POS) software and ERP system enables real-time data sharing and coordination, streamlining sales transactions and centralizing business processes.
+      </p>
     </mat-card-content>
   </mat-card>
 </div>
@@ -79,21 +81,78 @@
 <div class="two-cards card-bottom-p">
   <mat-card class="card">
     <mat-card-header>
-      <mat-card-title class="card-title">Shiba Inu</mat-card-title>
+      <mat-card-title class="card-title">Contactless Orders/Purchasing</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <p>This card indeterminates progress bar.</p>
+      <p>
+        Our AI-powered ERP system automates supplier communication, effortlessly reaching out to each supplier via email to confirm transactions, saving you time and effort.
+      </p>
     </mat-card-content>
   </mat-card>
   <mat-card class="card">
     <mat-card-header>
-      <mat-card-title class="card-title">Shiba Inu</mat-card-title>
+      <mat-card-title class="card-title">IoT + AI integration</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <p>This card indeterminates progress bar.</p>
+      <p>
+        Revolutionize your ERP experience: AI and machine learning for advanced analytics, IoT integration for real-time data, and enhanced mobile support for seamless on-the-go access.
+      </p>
     </mat-card-content>
   </mat-card>
 </div>
+
+</div>
+
+
+<div #pricing>
+  <h1 class="title">Pricing</h1>
+  <div class="two-cards">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title class="card-title">Effortless access, intuitive interface</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+          <p>
+            We understand the frustrations users often face with complex navigation in integrated systems.
+            That's why we've made accessibility our top priority.
+            Our software is designed to ensure a seamless and user-friendly experience, mitigating the challenges associated with ERP usage.
+          </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title class="card-title">Point of Sale (POS) integration</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Seamless integration between point of sale (POS) software and ERP system enables real-time data sharing and coordination, streamlining sales transactions and centralizing business processes.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="two-cards card-bottom-p">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title class="card-title">Contactless Orders/Purchasing</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Our AI-powered ERP system automates supplier communication, effortlessly reaching out to each supplier via email to confirm transactions, saving you time and effort.
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title class="card-title">IoT + AI integration</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Revolutionize your ERP experience: AI and machine learning for advanced analytics, IoT integration for real-time data, and enhanced mobile support for seamless on-the-go access.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
 
 </div>
 
