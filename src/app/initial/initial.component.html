@@ -4,7 +4,7 @@
   <div class="top-bar-buttons">
     <button mat-button (click)="scroll(features)" class="top-bar-button">Features</button>
     <button mat-button class="top-bar-button" (click)="scroll(features)">Pricing</button>
-    <button mat-raised-button class="top-bar-button" color="primary" style="color: white ;">I'm interested!</button>
+    <a mat-raised-button href="https://y3coyql3pj5.typeform.com/to/Ep2BlFgY" color="primary" style="color: white;">I'm Interested!</a>
   </div>
 </div>
 
@@ -13,38 +13,38 @@
 <p class="description">Streamline your grocery business with our affordable and intuitive ERP solution!</p>
 <div class="cta">
   <div>
-    <button mat-raised-button class="cta" color="primary" (click)="scroll(features)" style="color: white ;">Features</button>
+    <a mat-raised-button href="https://y3coyql3pj5.typeform.com/to/Ep2BlFgY" class="cta" color="primary" style="color: white;">I'm Interested!</a>
   </div>
-  <button mat-raised-button class="cta" (click)="scroll(pricing)">Pricing</button>
+    <button mat-raised-button class="cta" (click)="scroll(features)">Features</button>
 </div>
 
 
-<h4 class="small-title">Clients</h4>
+<h4 class="small-title">Our clients</h4>
 
 <!--Testimonials-->
 <div class="testimonial-container">
   <div class="testimonial-wrapper" id="testimonialWrapper">
     <!-- Add your client logos and testimonials here -->
     <div class="testimonial">
-      <img src="assets/galp.png" alt="Client 1">
+      <img src="assets/eia.jpg" alt="Client 1">
     </div>
     <div class="testimonial">
-      <img src="assets/galp.png" alt="Client 2">
+      <img src="assets/eia.jpg" alt="Client 1">
     </div>
     <div class="testimonial">
-      <img src="assets/galp.png" alt="Client 2">
+      <img src="assets/eia.jpg" alt="Client 1">
     </div>
     <div class="testimonial">
-      <img src="assets/galp.png" alt="Client 2">
+      <img src="assets/eia.jpg" alt="Client 1">
     </div>
     <div class="testimonial">
-      <img src="assets/galp.png" alt="Client 2">
+      <img src="assets/eia.jpg" alt="Client 1">
     </div>
     <div class="testimonial">
-      <img src="assets/galp.png" alt="Client 2">
+      <img src="assets/eia.jpg" alt="Client 1">
     </div>
     <div class="testimonial">
-      <img src="assets/galp.png" alt="Client 2">
+      <img src="assets/eia.jpg" alt="Client 1">
     </div>
     <!-- Add more testimonials as needed -->
   </div>
@@ -107,53 +107,50 @@
 <div #pricing>
   <h1 class="title">Pricing</h1>
   <div class="two-cards">
-    <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title class="card-title">Effortless access, intuitive interface</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-          <p>
-            We understand the frustrations users often face with complex navigation in integrated systems.
-            That's why we've made accessibility our top priority.
-            Our software is designed to ensure a seamless and user-friendly experience, mitigating the challenges associated with ERP usage.
-          </p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title class="card-title">Point of Sale (POS) integration</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Seamless integration between point of sale (POS) software and ERP system enables real-time data sharing and coordination, streamlining sales transactions and centralizing business processes.
-        </p>
-      </mat-card-content>
+    <mat-card class="pricing-card">
+      <div class="text-frame">
+        <div class="text-block">
+          <h4><s>19,90€/m</s></h4>
+          <h3>16,60€/m</h3>
+          <p class="twelve-month-commit-text">with a 12 month commitment</p>
+          <h3>Included Modules:</h3>
+          <p>Inventory Management</p>
+          <p>Point of Sale (POS)</p>
+          <p>Accounting</p>
+          <p>Customer Relationship Management (CRM)</p>
+          <p>Human Resources (HR)</p>
+        </div>
+        <mat-divider vertical="true"></mat-divider>
+        <div class="text-block">
+          <h3>19,90€/m</h3>
+          <p class="twelve-month-commit-text">with no monthly commitment</p>
+          <h3>Included Modules:</h3>
+          <p>Inventory Management</p>
+          <p>Point of Sale (POS)</p>
+          <p>Accounting</p>
+          <p>Customer Relationship Management (CRM)</p>
+          <p>Human Resources (HR)</p>
+        </div>
+      </div>
+
+
+      <mat-card-actions class="center-button">
+        <a mat-raised-button href="https://y3coyql3pj5.typeform.com/to/Ep2BlFgY" color="primary" style="color: white;">I'm Interested!</a>
+      </mat-card-actions>
     </mat-card>
   </div>
-
-  <div class="two-cards card-bottom-p">
-    <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title class="card-title">Contactless Orders/Purchasing</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Our AI-powered ERP system automates supplier communication, effortlessly reaching out to each supplier via email to confirm transactions, saving you time and effort.
-        </p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title class="card-title">IoT + AI integration</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Revolutionize your ERP experience: AI and machine learning for advanced analytics, IoT integration for real-time data, and enhanced mobile support for seamless on-the-go access.
-        </p>
-      </mat-card-content>
-    </mat-card>
-  </div>
-
 </div>
 
 
+
+<mat-divider style="margin-top: 1rem;"></mat-divider>
+
+
+<div class="top-bar">
+  <h2 class="brand">Hestia ERP</h2>
+  <!--Buttons-->
+  <div class="top-bar-buttons">
+    <p>Built for EIA 2023 Edition</p>
+    <a mat-raised-button href="https://y3coyql3pj5.typeform.com/to/Ep2BlFgY">I'm Interested!</a>
+  </div>
+</div>
