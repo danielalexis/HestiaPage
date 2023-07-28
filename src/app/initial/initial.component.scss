@@ -63,7 +63,8 @@
 
 
 .testimonial-container {
-  overflow: hidden; /* Hide content that goes beyond the container */
+  overflow: hidden;
+  /* Hide content that goes beyond the container */
 }
 
 .testimonial-wrapper {
@@ -89,8 +90,10 @@
   0% {
     transform: translateX(100vw);
   }
+
   100% {
-    transform: translateX(calc(-100% + 20px)); /* Adjust the value based on the testimonial container's width and margin */
+    transform: translateX(calc(-100% + 20px));
+    /* Adjust the value based on the testimonial container's width and margin */
   }
 }
 
@@ -149,7 +152,12 @@
   text-align: center;
 }
 
-.text-block h1, h2, h3, h4, h5, h6 {
+.text-block h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -174,4 +182,64 @@ a {
   text-align: center;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+// Mobile responsive codes
+// max-width: 1024px
+@media (max-width: 1024px) {
+  .title {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 4rem;
+  }
+}
+
+// max-width: 768px
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+
+  .brand {
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .top-bar-buttons {
+    padding: 0px 20px;
+    justify-content: space-between;
+  }
+
+  .title {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 3rem;
+  }
+
+  .description {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 1em;
+  }
+}
+
+// max-width: 425px
+@media (max-width: 425px) {
+  .title {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 2rem;
+  }
+  
+  .text-frame {
+    flex-direction: column;
+  }
+
+  .top-bar-buttons {
+    flex-direction: column;
+    padding: 0px 8px;
+    margin-bottom: 32px;
+  }
 }
